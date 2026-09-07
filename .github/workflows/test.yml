@@ -1,0 +1,43 @@
+name: Validate and test
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONUTF8: '1'
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - name: Standard library retrieval tests (optional parsers absent)
+        run: python -m unittest discover -s tests -v
+      - name: Install development and optional parser dependencies
+        run: python -m pip install -r requirements-dev.txt -r plugins/investment-research-workbench/skills/investment-research-workbench/assets/project_scaffold/requirements-optional.txt
+      - name: Portable Skill and Plugin contract validation
+        run: python tools/validate_distribution.py
+      - name: Behavioral tests and real CLI smoke
+        run: python -m unittest discover -s tests -v
+      - name: Secret and artifact scan
+        run: python tools/release_scan.py
+      - name: Fetch pinned official Skill validation tool
+        uses: actions/checkout@v4
+        with:
+          repository: openai/skills
+          ref: 49f948faa9258a0c61caceaf225e179651397431
+          path: .validation/openai-skills
+          sparse-checkout: skills/.system/skill-creator
+      - name: Official Skill validation
+        run: python .validation/openai-skills/skills/.system/skill-creator/scripts/quick_validate.py plugins/investment-research-workbench/skills/investment-research-workbench
+      # Official plugin-creator validator is available in Codex distributions, not
+      # assumed to be available from the public openai/skills checkout. Run before
+      # release in that environment; CI uses the clearly labeled portable checks.

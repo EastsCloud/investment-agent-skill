@@ -1,0 +1,33 @@
+{
+  "name": "investment-research-workbench",
+  "version": "0.1.0",
+  "description": "Local-first investment research with durable notes, offline RAG and reviewed updates.",
+  "author": {
+    "name": "EastsCloud",
+    "url": "https://github.com/EastsCloud"
+  },
+  "homepage": "https://github.com/EastsCloud/investment-agent-skill",
+  "repository": "https://github.com/EastsCloud/investment-agent-skill",
+  "license": "MIT",
+  "keywords": [
+    "investment",
+    "research",
+    "local-rag",
+    "knowledge-management"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Investment Research Workbench",
+    "shortDescription": "Local investment research with offline RAG.",
+    "longDescription": "Build durable local research memory with company and sector memos, an unprocessed inbox, offline RAG, context packs and review-before-write updates. Continue across chats while keeping investment logic user-led.",
+    "developerName": "EastsCloud",
+    "category": "Productivity",
+    "capabilities": [],
+    "websiteURL": "https://github.com/EastsCloud/investment-agent-skill",
+    "defaultPrompt": [
+      "Initialize an investment research workspace in this folder.",
+      "Continue this investment research project from its local files.",
+      "Research this company using my local notes and RAG index."
+    ]
+  }
+}

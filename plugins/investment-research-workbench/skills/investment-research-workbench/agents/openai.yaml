@@ -1,0 +1,4 @@
+interface:
+  display_name: "Investment Research Workbench"
+  short_description: "Local investment research with review before write"
+  default_prompt: "Use $investment-research-workbench to continue this investment research project."

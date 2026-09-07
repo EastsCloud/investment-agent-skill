@@ -1,0 +1,12 @@
+rag/index/
+rag/extracted_text/
+rag/logs/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.sqlite3
+*.sqlite3-*
+.DS_Store
+Thumbs.db
