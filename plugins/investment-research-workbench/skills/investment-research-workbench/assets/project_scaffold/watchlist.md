@@ -1,6 +1,7 @@
-# Watchlist
+# Watchlist / 观察名单
 
-由用户选择公司和状态；初始化不填入任何持仓或偏好。
+The user selects companies and status. Initialization adds no holdings or preferences.
+由用户选择公司和状态，初始化不填入持仓或偏好。
 
-| 公司 | 行业 | 状态 | 投资类型 | 核心变量 | 下一步 | 最近更新 |
+| Company / 公司 | Sector / 行业 | Status / 状态 | Thesis type / 投资类型 | Core variable / 核心变量 | Next step / 下一步 | Updated / 最近更新 |
 | --- | --- | --- | --- | --- | --- | --- |

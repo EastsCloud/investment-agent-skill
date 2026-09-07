@@ -1,5 +1,7 @@
 # Validation record — 0.1.0
 
+English (primary) · [简体中文](VALIDATION.zh-CN.md)
+
 Checked on 2026-09-07.
 
 ## Official format checks
@@ -32,11 +34,13 @@ a separate sample workspace, inserted synthetic Chinese evidence, ran index buil
 Chinese search, context evidence generation and project validation. All succeeded.
 Validation reported valid structure, a fresh index and zero parse errors.
 Neither this profile nor the generated sample project is shipped in the repository.
+After the first push, installation from the GitHub marketplace was also verified successfully.
 
 This proves local marketplace ingestion and executable package behavior, not universal
 availability on every Codex surface or automatic inclusion in OpenAI's public directory.
 Trigger wording and authority rules were reviewed; no hosted-model behavioral evaluation
 or live investment decision test was run.
+Follow the [manual guide](docs/TESTING.md) to evaluate actual prompt behavior.
 
 ## Behavioral regression tests
 
@@ -57,6 +61,8 @@ no product code was weakened to work around that environment.
 GitHub Actions is configured for Ubuntu and Windows with Python 3.14, first without
 optional parsers and then with them. Remote CI status is visible on the repository's
 Actions tab; a configured matrix alone is not a claim that remote jobs have passed.
+The initial release's [CI run](https://github.com/EastsCloud/investment-agent-skill/actions/runs/34089086631)
+passed on both platforms. Later changes should be checked against their own commit's Actions result.
 
 ## Publication checks
 
@@ -70,3 +76,10 @@ No third-party implementation code is bundled; MIT license applies to this repos
 
 Heuristic scanning is not proof that arbitrary future changes contain no secrets.
 Run validation and review the staged diff before each later release.
+
+## Bilingual documentation maintenance
+
+The documentation update makes the homepage English-first and maintains a Chinese counterpart,
+paired prompt/testing/validation guides, bilingual references and bilingual project templates.
+The single runtime entrypoint remains the English SKILL.md. Language maintenance rules are in
+[CONTRIBUTING.md](CONTRIBUTING.md); automatic semantic translation checking is not claimed.

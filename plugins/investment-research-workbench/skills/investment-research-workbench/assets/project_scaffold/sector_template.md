@@ -1,25 +1,25 @@
-# 行业名称 - Sector Memo
+# Sector name — Sector memo / 行业名称 — 行业备忘录
 
-## 当前观点与日期
+## Current view and date / 当前观点与日期
 
-## 产业链与商业模式
+## Value chain and business models / 产业链与商业模式
 
-## 行业阶段、供需和产能
+## Industry stage, supply, demand and capacity / 行业阶段、供需和产能
 
-## 核心变量、价格与成本
+## Core variables, prices and costs / 核心变量、价格与成本
 
-## 竞争格局、行业 beta 和公司 alpha
+## Competition, industry beta and company alpha / 竞争格局、行业 beta 与公司 alpha
 
-## 政策、技术替代和长期成长因素
+## Policy, technology substitution and durable growth / 政策、技术替代与长期成长因素
 
-## 周期反弹与结构性成长的区分
+## Cyclical recovery versus structural growth / 周期反弹与结构性成长的区分
 
-## 跟踪指标与数据来源
+## Tracking indicators and sources / 跟踪指标与数据来源
 
-## Bear case 与 thesis invalidation
+## Bear case and thesis invalidation / 反方观点与证伪条件
 
-## 待验证问题
+## Questions to verify / 待验证问题
 
-## 历史观点变化
+## Historical view changes / 历史观点变化
 
-原判断 / 新判断 / 日期 / 原因 / 用户授权引用。
+Previous view / 原判断；new view / 新判断；date / 日期；reason / 原因；authorization / 用户授权引用。

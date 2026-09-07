@@ -5,6 +5,9 @@ description: Initialize, operate, continue, organize, retrieve, or maintain a lo
 
 # Investment Research Workbench
 
+English runtime entrypoint. [中文说明](references/skill-guide.zh-CN.md) is the matching
+translation for Chinese readers; use one language version as needed, not both by default.
+
 Maintain a local, user-led investment research system. Project files are durable state;
 chat history is optional context. Match the user's language (Chinese and English).
 Locate the project root and read its AGENTS.md before operating. Resolve bundled paths

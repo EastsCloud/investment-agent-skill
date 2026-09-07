@@ -1,6 +1,6 @@
 {
   "name": "investment-research-workbench",
-  "version": "0.1.0",
+  "version": "0.1.0+codex.20260907184337",
   "description": "Local-first investment research with durable notes, offline RAG and reviewed updates.",
   "author": {
     "name": "EastsCloud",
